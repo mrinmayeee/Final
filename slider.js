@@ -171,16 +171,7 @@ LSTmap.on('click', 'LST2', (e) => {
 /*--------------------------------------------------------------------
    ADDING INTERACTIVITY BASED ON HTML EVENT
    --------------------------------------------------------------------*/
-
-//Add event listeneer which returns map view to full screen on button click
-document.getElementById('returnbutton').addEventListener('click', () => {
-    map.flyTo({
-        center: [-79.408, 43.7056],
-        zoom: 10,
-        essential: true
-    });
-});
-
+   
 //NDVI legend checkbox
 let legendcheck = document.getElementById('legendcheck');
 
@@ -216,7 +207,8 @@ LSTlegendcheck.addEventListener('click', () => {
 const geocoder = new MapboxGeocoder({
     accessToken: mapboxgl.accessToken,
     mapboxgl: mapboxgl,
-    countries: "ca"
+    country: "ca",
+    region: "toronto"
 });
 
 //Use geocoder div to position geocoder on page

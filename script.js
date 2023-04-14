@@ -206,7 +206,8 @@ map.on('load', () => {
     const geocoder = new MapboxGeocoder({
         accessToken: mapboxgl.accessToken,
         mapboxgl: mapboxgl,
-        countries: "ca"
+        country: "ca",
+        region: "toronto"
     });
 
     //Use geocoder div to position geocoder on page
