@@ -1,0 +1,187 @@
+.map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.map2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.map-overlay-search {
+    position: relative;
+    font: 14px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background: rgba(255, 255, 255, 0.8);
+    top: 0;
+    left: 0;
+    width: 260px;
+    margin: 10px 0 0 10px;
+    padding: 10px;
+    /*around elements inside of overlay*/
+    overflow: visible;
+    box-shadow: 5px 5px 5px rgba(54, 52, 52, 0.511);
+    border-radius: 10px;
+}
+
+.geocoder {
+    position: relative;
+    margin: 10px 0 10px;
+}
+
+#returnbutton {
+    position: relative;
+    margin: 10px 0 10px;
+    width: 100%;
+}
+
+
+.map-overlay-data {
+    position: relative;
+    font: 14px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background: rgba(255, 255, 255, 0.8);
+    width: 285px;
+    top: 0;
+    left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    overflow: visible;
+    box-shadow: 5px 5px 5px rgba(54, 52, 52, 0.511);
+    border-radius: 10px;
+}
+
+.map-overlay-data2 {
+    position: relative;
+    font: 14px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background: rgba(255, 255, 255, 0.8);
+    width: 100px;
+    top: 0;
+    left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    overflow: visible;
+    box-shadow: 5px 5px 5px rgba(54, 52, 52, 0.511);
+    border-radius: 10px;
+}
+
+.legend {
+    position: absolute;
+    display: none;
+    /*set to none so that when a checkbox is clicked it's turned on*/
+    background-color: #fff;
+    border-radius: 10px;
+    bottom: 0;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 5px rgba(54, 52, 52, 0.511);
+    /* hotizontal, vertical, size, color*/
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    padding: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.legend h4 {
+    margin: 0 0 10px;
+}
+
+/*styling of the rows of the legend*/
+.legend div span {
+    display: inline-block;
+    border-radius: 0%;
+    /*0% to make it a square*/
+    height: 10px;
+    /*size of square*/
+    width: 10px;
+    margin-right: 5px;
+    /*position of square*/
+}
+
+.LSTlegend {
+    position: absolute;
+    display: none;
+    /*set to none so that when a checkbox is clicked it's turned on*/
+    background-color: #fff;
+    border-radius: 10px;
+    bottom: 0;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 5px rgba(54, 52, 52, 0.511);
+    /* hotizontal, vertical, size, color*/
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    padding: 10px;
+    right: 120px;
+    z-index: 1;
+}
+
+.LSTlegend h4 {
+    margin: 0 0 10px;
+}
+
+/*styling of the rows of the legend*/
+.LSTlegend div span {
+    display: inline-block;
+    border-radius: 0%;
+    /*0% to make it a square*/
+    height: 10px;
+    /*size of square*/
+    width: 10px;
+    margin-right: 5px;
+    /*position of square*/
+}
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #c9f2f6;
+}
+
+/* Navbar links */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background: var(--gradient) !important;
+    -webkit-background-clip: none !important;
+    -webkit-text-fill-color: #fff !important;
+    /* border: 5px solid #fff !important;  */
+    box-shadow: #0b6365 1px 0 10px;
+    text-decoration: none;
+}
+
+/* Tiles on Learn More tab and buttons */
+:root {
+    --gradient: linear-gradient(to left top, #1ec283 10%, #210551 90%) !important;
+}
+
+body {
+    background: #065044 !important;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #0ec0cd;
+    color: rgba(19, 95, 71, 0.8);
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background: var(--gradient) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    border-image-source: var(--gradient) !important;
+    text-decoration: none;
+}
+
+.btn:hover,
+.btn:focus {
+    background: var(--gradient) !important;
+    -webkit-background-clip: none !important;
+    -webkit-text-fill-color: #fff !important;
+    box-shadow: #0b6365 1px 0 10px;
+    text-decoration: none;
+}
